@@ -15,6 +15,7 @@ func main() {
 	http.HandleFunc("/json", handler)
 
 	// ここの下に追加
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 type Payload struct {
