@@ -21,7 +21,7 @@ func main() {
 type Payload struct {
 	// jsonタグを追加してみよう
 	// key名はname
-	MyName string
+	MyName string `json:"name"`
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
